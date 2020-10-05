@@ -4,8 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Code Quiz (Javascript)</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/style.css">
 </head>
 <body>
-    
+    <header class="upper-content">
+        <p class="highscore">View high scores</p>
+        <div class="time">
+            <p>Time left:  <span id="timer">75</span></p>
+        </div>
+    </header>
+    <section class="main">
+        <h1 class="title">Coding Quiz Challenge</h1>
+        
+        <p class="instructions">Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by 10 seconds.</p>
+        <button type="submit" class="start-btn" id="start-btn">Start Quiz</button>
+    </section>
+    <script src="assets/index.js"></script>
 </body>
 </html>

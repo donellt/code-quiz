@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+*:focus {
+    outline: 0 !important;
+}
+
+.upper-content {
+    padding: 10px 50px
+}
+
+.highscore {
+    display: flex;
+    align-self: start;
+    color: #af5eff;
+    font-size: 25px;
+}
+
+.time {
+    display: flex;
+    font-size: 25px;
+    padding: 10px 0px
+}
+
+.main {
+    text-align: center;
+    padding-top: 75px;
+}
+
+.title {
+    font-size: 70px;
+    justify-content: space-between;
+    margin: 15px;
+}
+
+.instructions {
+    font-size: 35px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 250px;
+}
+
+.start-btn {
+    background-color: #400080;
+    color: white;
+    font-size: 25px;
+    margin-top: 50px;
+    padding: 15px;
+    border: none;
+    border-radius: 12px;
+}
+
+.start-btn:hover {
+    background-color: #af5eff;
+    box-shadow: 0 8px 6px -6px black;
+    outline: none;
+}
