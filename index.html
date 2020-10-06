@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,19 +8,51 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/style.css">
 </head>
+
 <body>
+    <!-- Header (View high scores and timer) -->
     <header class="upper-content">
         <p class="highscore">View high scores</p>
         <div class="time">
-            <p>Time left:  <span id="timer">75</span></p>
+            <p>Time left: <span id="timer">75</span></p>
         </div>
     </header>
-    <section class="main">
+
+    <!-- Opening quiz screen with instructions -->
+    <section class="main" id="initial-screen">
         <h1 class="title">Coding Quiz Challenge</h1>
-        
-        <p class="instructions">Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by 10 seconds.</p>
+
+        <p class="instructions">Try to answer the following code-related questions within the time limit. Keep in mind
+            that incorrect answers will penalize your score/time by 10 seconds.</p>
         <button type="submit" class="start-btn" id="start-btn">Start Quiz</button>
     </section>
+
+    <!-- Quiz questions (hidden until Start button is clicked) -->
+    <div class="quiz-container hide" id="questions-container">
+        <div class="question-text" id="question">This is an example question. Imagine if it was real!</div>
+        <div class="btn-container" id="answer-buttons">
+            <button class="answer-class" id="a"></button>
+            <button class="answer-class" id="b"></button>
+            <button class="answer-class" id="c"></button>
+            <button class="answer-class" id="d"></button>
+        </div>
+        <div class="explanation hide" id="explanation">
+
+        </div>
+    </div>
+
+    <!-- Input highscore sections -->
+    <div class="finished-container hide" id="finished-container">
+        <div class="finished-text">All Done!</div>
+        <p>Your final score is <span id="final-score"></span>.</p>
+        <div class="submit-score">
+            <label for="w3review">Review of W3Schools:</label>
+            <textarea id="initials" placeholder="Example: DT" name="initials"></textarea>
+            <input class="submit-btn" type="submit" value="Submit">
+        </div>
+    </div>
+
     <script src="assets/index.js"></script>
 </body>
+
 </html>

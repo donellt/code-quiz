@@ -9,8 +9,12 @@
 }
 
 .upper-content {
-    padding: 10px 50px
+    padding: 10px 50px;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
 }
+
 
 .highscore {
     display: flex;
@@ -22,7 +26,8 @@
 .time {
     display: flex;
     font-size: 25px;
-    padding: 10px 0px
+    justify-content: end;
+    text-align: right;
 }
 
 .main {
@@ -48,7 +53,7 @@
     color: white;
     font-size: 25px;
     margin-top: 50px;
-    padding: 15px;
+    padding: 15px 25px;
     border: none;
     border-radius: 12px;
 }
@@ -57,4 +62,106 @@
     background-color: #af5eff;
     box-shadow: 0 8px 6px -6px black;
     outline: none;
+}
+
+.hide {
+    display: none !important;
+}
+
+
+.quiz-container {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 100px 450px;
+
+}
+
+.question-text {
+    font-size: 65px;
+    justify-content: space-between;
+    margin: 20px;
+    font-weight: bold;
+}
+
+.btn-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-right: 35rem;
+    padding-left: 25px;
+}
+.answer-class {
+    display: flex;
+    background-color: #400080;
+    color: white;
+    font-size: 25px;
+    margin-top: 10px;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 12px;
+    text-align: left;
+}
+
+.answer-class:hover {
+    background-color: #af5eff;
+}
+
+.answer-class:focus {
+    background-color: #af5eff;
+}
+
+.explanation {
+    color: gray;
+    font-style: italic;
+    font-size: 35px;
+    margin-top: 15px;
+    border-top: solid 1px gray;
+    padding-top: 10px;
+    padding-left: 25px;
+}
+
+.finished-container {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 100px 450px;
+
+}
+
+.finished-text {
+    font-size: 65px;
+    justify-content: space-between;
+    margin: 20px;
+    font-weight: bold;
+}
+
+.finished-container p, label {
+    font-size: 25px;
+    padding-left: 25px;
+    margin-top: 7px;
+}
+
+.submit-btn {
+    background-color: #400080;
+    color: white;
+    font-size: 25px;
+    padding: 7px 20px;
+    border: none;
+    border-radius: 12px;
+}
+
+.submit-score {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    padding-bottom: 0px;
+}
+#initials {
+    display: flex;
+    height: 25px;
+    font-size: 22px;
+    margin: 7px 10px 0 10px;
 }
