@@ -10,6 +10,10 @@ const answerD = document.getElementById('d')
 const answerResult = document.getElementById('explanation')
 const finishContainer = document.getElementById('finished-container')
 const finalScoreText = document.getElementById('final-score')
+const submitScore = document.getElementById('submit')
+const scoresContainer = document.getElementById("scores-container")
+const initials = document.getElementById("initials")
+const scoreBoxText = document.getElementById('score-box')
 
 i = 0
 
@@ -162,10 +166,41 @@ function answerVerification() {
     };
 };
 
+
+
+
 function finishedQuiz() {
     quizQuestions.classList.add('hide');
     finishContainer.classList.remove('hide');
     const finalScore = timeLeft;
     time.innerHTML = finalScore;
     finalScoreText.innerHTML = finalScore;
-};
+}
+
+submitScore.addEventListener("click", saveHighscore);
+
+
+function saveHighscore() {
+    finishContainer.classList.add('hide');
+    userScore = (initials.value + ' - ' + timeLeft);
+    scoreBoxText.innerHTML = userScore;
+    scoresContainer.classList.remove('hide');
+
+    localStorage.setItem('score', userScore);
+    console.log(userScore);
+}
+
+const clearStorage = document.getElementById('clear-btn')
+
+clearStorage.addEventListener('click', clearStore)
+
+function clearStore() {
+    clearStorage();
+}
+
+
+
+
+
+    //localStorage.setItem('name', '')
+

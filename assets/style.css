@@ -165,3 +165,30 @@
     font-size: 22px;
     margin: 7px 10px 0 10px;
 }
+
+.back-btn, .clear-btn {
+    background-color: #400080;
+    color: white;
+    font-size: 25px;
+    padding: 7px 20px;
+    border: none;
+    border-radius: 12px;
+}
+
+.scores-container {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 100px 450px;
+}
+
+.scores-container p {
+    background-color: #EAD0FF;
+    padding: 10px;
+    margin-left: 25px;
+}
+.scores-container div {
+    margin-left: 25px;
+    padding-top: 25px;
+}
